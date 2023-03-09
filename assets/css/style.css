@@ -1,0 +1,368 @@
+*{
+    margin:0 auto;
+    padding:0;
+}
+
+body {
+    font-family:  Sans-Serif;
+  }
+/* FONTOVI */
+@font-face {
+    font-family: fonthead;
+    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: bold;
+  }
+
+.nosachead{
+    width:100%;
+    height:50px;
+    position: relative;
+}
+
+#wrapper{
+    width:100%;
+    background-color: #e3e3e3;
+}
+.cleaner{
+    clear:both;
+}
+header{
+    background-color: #1D1E20;
+    width:100%;
+    height:50px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 30;      
+}
+
+.grad{
+
+    width:100%;
+    height:1px;
+    background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(227,227,227,1) 50%, rgba(99,99,99,1) 100%);
+    position: fixed;
+    top:51px;
+    left:0px;
+    z-index: 31;
+}
+ul#nav{
+    list-style-type: none;
+    float:right;
+    margin-right:15px;
+}
+ul#nav li{float:left;
+padding:0 25px;
+color:#e3e3e3;
+margin-top:16px;
+}
+header h1#logo img{
+    float: left;
+
+    margin-left:25px;
+    margin-top: 5px;
+}
+
+
+ul#nav li:first-child{
+    border:none;
+}
+
+ul#nav li a{
+    color:#e3e3e3;
+    text-decoration: none;
+}
+
+.mainimg figure img{
+    width:100%;
+    height:calc(100vh - 50px);
+    object-fit: cover;
+    position: absolute;
+    
+}
+.mainimg figure{
+    position:relative;
+    width:100%;
+    height:calc(100vh - 50px);;
+
+}
+.mainimg figcaption{
+    text-align: center;
+    z-index: 2;
+    position:absolute;
+    color:#e3e3e3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;  
+    font-weight: bold;
+    width:800px;
+    height:60px;
+    font-family: fonthead;
+    border-bottom:3px solid #e3e3e3;
+    padding-bottom: 30px;
+ 
+}
+.zver{
+    color:#880808;
+    text-shadow:1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, 2px 2px 0px white;
+    letter-spacing: 3px;
+
+}
+.mainimg{
+    margin-top: 50px;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/Designer.otf);
+    font-weight: bold;
+  }
+.logotext{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    
+    z-index: 4;
+    transform:translate(-50%, -50%);
+    color:#e3e3e3;
+    font-family: myFirstFont;
+    font-size: 24px;
+}
+
+/* clanarine */
+.ponuda{
+    background-color: #e3e3e3;
+    width:100%;
+
+    
+
+}
+
+.ponuda img{
+    float:left;
+    height:400px;
+    width:640px;
+    
+}
+#nosac-slike{
+    width:50%;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:25px 0px;
+}
+.ponuda .nosecitekst{
+
+    margin-top: 25px;
+    float:left;
+    color:#1D1E20;
+    display: flex;
+    flex-direction: column;
+    width:calc(50% - 50px);
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    height: 400px;
+    
+
+
+
+
+}
+.boje{
+    color:#e3e3e3 !important;
+    background-color: #1D1E20 !important;
+    width:100%;
+
+}
+.boje .nosecitekst{
+    color:#e3e3e3 !important;
+
+
+}
+.ponuda .nosecitekst h2{
+    width:300px;
+    height:20px;
+    font-size: 26px;
+}
+.ponuda .nosecitekst p{
+
+width:500px;
+height:150px;
+
+font-size: 20px;
+}
+
+/* treneri */
+
+#nas-tim{
+    width:100%;
+    height:600px;
+    background-color: #e3e3e3;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#nas-tim .trener{
+    width:150px;
+
+    height: 150px;
+    background-image: url("../images/trener1.jpg");
+    border-radius: 50%;
+    position:absolute;
+    left:75px;
+    top:-75px;
+    border:2px solid #1D1E20;
+
+
+
+}
+
+#nas-tim .trener-tekst {
+    width:300px;
+    height:400px;
+    position:relative;
+    background-color: #1D1E20;
+    border-top: 2px solid #e3e3e3;
+    border-radius: 25px;
+}
+
+.trener-tekst .ime{
+    width:250px;
+    text-align: center;
+border-bottom:1px solid #e3e3e3;
+    color: #e3e3e3;
+    padding-top: 100px;
+    font-size: 24px;
+    
+}
+ul.skill{
+    list-style-type: none;
+}
+ul.skill li.ostalo{
+    text-align: center;
+    color:#e3e3e3;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#tekst2{
+    width:100%;
+    height:100px;
+    background-color: #e3e3e3;
+
+}
+
+#tekst2 h2{
+    color:#1D1E20;
+    width: 600px;
+    border-bottom: 3px solid #1D1E20;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: fonthead;
+}
+
+
+
+/* poruka */
+
+#poruka i{
+    transform: rotate(90deg);
+    margin-left:50px;
+    color:white
+}
+#poruka{
+    width: 100%;
+    height:70px;
+    background-color: #1D1E20;
+}
+
+
+/* PROMO */
+#promo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:150px;
+    background-color: #1D1E20;
+}
+
+.sadrzaj-promo{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+justify-content: center;
+height:150px;
+color:#e3e3e3;
+}
+
+.sadrzaj-promo:hover{
+    color:rgb(255, 119, 14) !important;
+}
+.sadrzaj-promo i {
+
+    margin-bottom:25px;
+    font-size: 40px;
+}
+
+.sadrzaj-promo p{
+
+    font-size: 22px;
+}
+
+
+/* Raaspored treninga */
+
+#plan-gr-treninga h4{
+    text-align: center;
+    font-family: fonthead;
+    font-size: 40px;
+    color:#1D1E20;
+    margin-top: 30px;
+    border-bottom: 3px solid #1D1E20;
+    width:800px;
+}
+
+table{
+    width:1000px;
+    height:500px;
+    text-align: center;
+    margin-top: 33px;
+}
+tr th{
+    color:#e3e3e3;
+    background-color: #1D1E20;
+    height:50px;
+    width:80px;
+    text-transform: uppercase;
+}
+tbody tr td{
+    border:1px solid #c1c1c1;
+    width: max-content;
+    width:80px;
+    height:50px;
+    color:#1D1E20;
+}
+
+tbody tr td:first-child{
+    color:#e3e3e3;
+    background-color: #1D1E20;
+}
+
+
+tr th i{
+    color:#e3e3e3;
+    font-size: 30px;
+    font-weight: normal !important;
+}
