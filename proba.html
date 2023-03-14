@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0px;
+
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blue;
+  color:blue;
+  transition: width 0.1s ease-in-out;
+}
+
+
+h1:hover::after {
+  width: 100%;
+
+}
+        </style>
+    </head>
+    <body>
+        <h1>Neka vezba bla bla</h1>
+    </body>
+</html>

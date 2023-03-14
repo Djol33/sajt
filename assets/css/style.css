@@ -1,6 +1,7 @@
 *{
     margin:0 auto;
     padding:0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,7 @@ header{
     height:1px;
     background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(227,227,227,1) 50%, rgba(99,99,99,1) 100%);
     position: fixed;
-    top:51px;
+    top:50px;
     left:0px;
     z-index: 31;
 }
@@ -80,6 +81,32 @@ ul#nav li a{
     position: absolute;
     
 }
+ul li a{
+    color:#e3e3e3;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+ul li a::after{
+    content: "";
+    display: block;
+    height:1px;
+    width:100%;
+    background-color:#e3e3e3;
+
+    text-align: center;
+    transition: transform 0.1s ease;
+    transform: scaleX(0)
+
+
+
+}
+
+ul li:hover a::after {
+    transform: scaleX(1);
+}
 .mainimg figure{
     position:relative;
     width:100%;
@@ -105,9 +132,10 @@ ul#nav li a{
  
 }
 .zver{
-    color:#880808;
-    text-shadow:1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, 2px 2px 0px white;
+    color:#ff8100;
+    font-weight: bold;
     letter-spacing: 3px;
+    font-size: 65px;
 
 }
 .mainimg{
@@ -271,18 +299,6 @@ ul.skill li.ostalo{
 
 
 
-/* poruka */
-
-#poruka i{
-    transform: rotate(90deg);
-    margin-left:50px;
-    color:white
-}
-#poruka{
-    width: 100%;
-    height:70px;
-    background-color: #1D1E20;
-}
 
 
 /* PROMO */
@@ -308,7 +324,7 @@ color:#e3e3e3;
 }
 
 .sadrzaj-promo:hover{
-    color:rgb(255, 119, 14) !important;
+    color:#ff8100 ;
 }
 .sadrzaj-promo i {
 
@@ -346,6 +362,7 @@ tr th{
     height:50px;
     width:80px;
     text-transform: uppercase;
+    border-radius: 10px;
 }
 tbody tr td{
     border:1px solid #c1c1c1;
@@ -353,11 +370,17 @@ tbody tr td{
     width:80px;
     height:50px;
     color:#1D1E20;
+    border-radius: 10px;
+}
+tbody tr td:hover{
+    background-color: #ff9224;
+    color: #e3e3e3;;
 }
 
 tbody tr td:first-child{
     color:#e3e3e3;
     background-color: #1D1E20;
+    font-weight:bold;
 }
 
 
@@ -365,4 +388,312 @@ tr th i{
     color:#e3e3e3;
     font-size: 30px;
     font-weight: normal !important;
+}
+
+/* REKLAMA */
+
+#popust{
+    width:100%;
+    height:240px;
+    background-image: url("../images/popust.jpg");
+    background-size: cover;
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#popust h5{
+    font-size: 40px;
+    color:#e3e3e3;
+
+
+} 
+#popust p#prvitekst{
+    font-size: 50px;
+    color:#e3e3e3;
+
+}
+
+#akcijska-cena{
+
+    color:#ff8100;
+    font-weight:bold;
+
+}
+/* RADNO VREME */
+
+#radno-vreme{
+    width:100%;
+    height:340px;
+    background-image:url("../images/radno-vreme1.jpg");
+    background-size: cover;
+
+}
+
+#radno-vreme h6{
+    text-align:center;
+    color:#1D1E20;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-top: 35px;
+}
+
+
+#radno-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:70px;
+}
+
+#ver-line{
+    width:5px;
+    height:100px;
+    background-color: #1D1E20;
+    border-radius: 20px;
+}
+
+
+.pon-pet{
+    font-size: 30px;
+    color:#1D1E20;
+    text-align: center;
+}
+
+.pon-pet p:first-child{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+
+/* -----------------CENOVNIK--------------- */
+
+#cena-main{
+    width:100%;
+    height:600px;
+
+}
+
+#mainimg-cena{
+width:100%;
+height:600px;
+}
+#mainimg-txt{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+
+#cena{
+    width:100%;
+    background-color: #e3e3e3;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+
+.paket{
+    width:300px;
+    height:350px;
+    text-align: center;
+    background-color: #e3e3e3;
+    color:#1D1E20;
+    border-radius: 25px;
+    margin-top: 40px;
+    border:1px solid #1D1E20;
+    overflow: hidden;
+    position: relative;
+}
+
+.vreme{
+    font-size: 20px;
+}
+
+.cena-paket{
+    width:100%;
+    color:#ff8100;
+    height:35px;
+    font-size: 26px;
+
+    font-weight: bold;
+
+    
+}
+
+p.ime-paket{
+    width:300px;
+    height:40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #1D1E20;
+    color:#e3e3e3;
+    padding-top: 20px;
+    font-weight: bold;
+
+}
+
+.pocni{
+    width:100%;
+    height:40px;
+    background-color: #1D1E20;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    padding-top: 20px;
+    font-weight: bold;
+
+}
+
+.pocni a{
+    color:#e3e3e3;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.pocni a::after{
+    content: "";
+    display: block;
+    height:1px;
+    width:100%;
+    background-color:#e3e3e3;
+
+    text-align: center;
+    transition: transform 0.1s ease;
+    transform: scaleX(0)
+
+
+
+}
+
+
+.paket:hover .pocni a::after {
+    transform: scaleX(1);
+}
+
+.flex-paket{
+    display: flex;
+    flex:1;
+    width:100%;
+    height: calc(100% - 120px);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upotreba-trt .zver{
+    font-size: 30px;
+    display:block;
+}
+.forlok{
+    background-color: #1D1E20;
+    background-image: url("../images/formabg.jpg");
+    background-position: right bottom;
+    mask-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.form{
+    width:30%;
+    color: #e3e3e3;
+    margin:20px 50px;
+    
+}
+
+form label, form input{
+    display: block;
+    width:100%;
+    text-align :center;
+
+    border-radius:20px ;
+    border:none;
+    margin-top:3px;
+
+}
+form input{
+    background-color: #e3e3e3;
+    color:#1D1E20;
+    height:30px;
+    font-size: 18px;
+
+}
+form label{
+    margin:10px auto;
+}
+textarea{
+    display: block;
+    width:100%;
+    height:60px;
+    border-radius: 20px;
+    border:none;
+    background-color: #e3e3e3;
+color:#1D1E20;
+font-size: 18px;
+text-indent: 20px;
+text-align: center;
+
+}
+form h6{
+    text-align: center;
+    font-size: 30px;
+}
+form{
+    border-radius: 20px;
+    border:1px solid #c1c1c1;
+    padding:20px;
+}
+input[type=submit]{
+    background-color: #ff8100;
+    color:#e3e3e3;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+ 
+}
+
+
+.pristup{
+    font-size: 18px;
+    color:#1D1E20
+}
+
+.flex-paket p .zver{
+    font-size: 20px;
+}
+
+
+/*galerija */
+.galerija img{
+    width:300px;
+    height:300px;
+    border-radius: 20px 0px 20px 0px;
+}
+.galerija{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width:1000px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:20px;
+}
+
+.galtit{
+    margin-top: 71px;
 }
