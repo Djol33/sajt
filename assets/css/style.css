@@ -57,12 +57,7 @@ padding:0 25px;
 color:#e3e3e3;
 margin-top:16px;
 }
-header h1#logo img{
-    float: left;
 
-    margin-left:25px;
-    margin-top: 5px;
-}
 
 
 ul#nav li:first-child{
@@ -81,7 +76,7 @@ ul#nav li a{
     position: absolute;
     
 }
-ul li a{
+nav ul li a{
     color:#e3e3e3;
     text-decoration: none;
     position: relative;
@@ -89,7 +84,7 @@ ul li a{
     text-align: center;
 }
 
-ul li a::after{
+nav ul li a::after{
     content: "";
     display: block;
     height:1px;
@@ -104,6 +99,20 @@ ul li a::after{
 
 }
 
+#logo a{
+    text-decoration: none;
+    color:#e3e3e3;
+    font-family: myFirstFont;
+    font-size: 24px;
+
+
+}
+#logo{
+    float:left;
+
+    margin-left:25px;
+    margin-top: 7px;
+}
 ul li:hover a::after {
     transform: scaleX(1);
 }
@@ -147,16 +156,11 @@ ul li:hover a::after {
     font-weight: bold;
   }
 .logotext{
-    position: absolute;
-    text-align: center;
-    top:50%;
-    left:50%;
+    float:left;
     
     z-index: 4;
-    transform:translate(-50%, -50%);
     color:#e3e3e3;
-    font-family: myFirstFont;
-    font-size: 24px;
+
 }
 
 /* clanarine */
@@ -246,11 +250,62 @@ font-size: 20px;
     left:75px;
     top:-75px;
     border:2px solid #1D1E20;
+    
 
 
 
 }
 
+#nas-tim .trener2{
+    width:150px;
+
+    height: 150px;
+    background-image: url("../images/trener2.jpg");
+    border-radius: 50%;
+    position:absolute;
+    left:75px;
+    top:-75px;
+    border:2px solid #1D1E20;
+    background-size:cover;
+
+
+
+}
+
+#nas-tim .trener3{
+    width:150px;
+
+    height: 150px;
+    background-image: url("../images/trener3.jpg");
+    border-radius: 50%;
+    position:absolute;
+    left:75px;
+    top:-75px;
+    border:2px solid #1D1E20;
+    background-size:cover;
+    background-position: center;
+
+
+
+
+}
+#nas-tim .trener4{
+    width:150px;
+
+    height: 150px;
+    background-image: url("../images/trener4.jpg");
+    border-radius: 50%;
+    position:absolute;
+    left:75px;
+    top:-75px;
+    border:2px solid #1D1E20;
+    background-size:cover;
+    background-position: center;
+
+
+
+
+}
 #nas-tim .trener-tekst {
     width:300px;
     height:400px;
@@ -685,15 +740,97 @@ input[type=submit]{
     border-radius: 20px 0px 20px 0px;
 }
 .galerija{
-    margin-top: 100px;
+
     display: grid;
     grid-template-columns: auto auto auto auto;
     width:1000px;
     align-items: center;
     justify-content: space-evenly;
     gap:20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
+
 .galtit{
-    margin-top: 71px;
+    width:500px;
+    border-bottom:1px solid #1D1E20;
+    font-family: fonthead;
+font-size: 30px;
+    margin-top: 50px;
+    padding-top:20px ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logotext a{
+    text-decoration: none;
+    color:#e3e3e3
+}
+
+/*footer*/
+
+footer{
+    width:100%;
+    padding:20px 0px;
+    background-color: #1D1E20;
+
+
+}
+
+
+.flexx{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    padding:0px 30px;
+    
+}
+footer ul{
+    list-style-type:none;
+}
+
+footer ul li i{
+    color:#e3e3e3
+}
+footer ul li{
+    margin:3px;
+}
+
+footer ul li a{
+    color:#e3e3e3;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    font-weight:lighter;
+}
+
+p#logo{
+    text-decoration: none;
+    color:#e3e3e3;
+    font-family: myFirstFont;
+    font-size: 24px;
+    margin:0px;
+    float:none;
+}
+
+.fa-sitemap{
+    font-size: 16px;
+}
+#centar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mot{
+    display:block;
+    float:none;
+    margin-top: 10px;
+    color:#e3e3e3;
+    text-align: center;
 }
