@@ -200,6 +200,7 @@ ul li:hover a::after {
     flex-wrap: nowrap;
     justify-content:space-evenly;
     height: 400px;
+    text-align:center;
     
 
 
@@ -552,6 +553,7 @@ height:600px;
     transform: translate(-50%,-50%);
     top:50%;
     left:50%;
+    font-size: 60px;
 }
 
 
@@ -666,8 +668,8 @@ p.ime-paket{
 .forlok{
     background-color: #1D1E20;
     background-image: url("../images/proba17.jpg");
-    background-position:  center;
-height:500px;
+    background-position:  center top;
+height:600px;
 background-size: cover;
 background-attachment: fixed;
 display: flex;
@@ -678,7 +680,7 @@ justify-content: center;
 }
 
 .form{
-    width:30%;
+    width:25%;
     color: #e3e3e3;
     margin:20px auto;
 
