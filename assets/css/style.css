@@ -39,6 +39,9 @@ header{
     z-index: 30;      
 }
 
+
+
+
 .grad{
 
     width:100%;
@@ -123,7 +126,27 @@ ul li:hover a::after {
     width:100%;
     height:calc(100vh - 50px);;
 
+
 }
+
+@keyframes ulaz{
+    0%{
+        transform:translate(-400%,-50%);
+        border-bottom: 0px;
+
+
+    }
+    50% {
+        transform:translate(-50%, -50%);
+        padding-bottom: 10px;
+
+    }
+    100%{
+        border-bottom: 3px solid #e3e3e3;
+        padding-bottom: 30px;
+    }
+}
+
 .mainimg figcaption{
     text-align: center;
     z-index: 2;
@@ -140,8 +163,13 @@ ul li:hover a::after {
     font-family: fonthead;
     border-bottom:3px solid #e3e3e3;
     padding-bottom: 30px;
+    animation-name: ulaz;
+    animation-duration: 3s;
+
+    animation-direction: alternate;
  
 }
+
 .zver{
     color:#ff8100;
     font-weight: bold;
@@ -422,7 +450,7 @@ tr th{
     height:50px;
     width:80px;
     text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 tbody tr td{
     border:1px solid #c1c1c1;
@@ -430,7 +458,7 @@ tbody tr td{
     width:80px;
     height:50px;
     color:#1D1E20;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 tbody tr td:hover{
     background-color: #ff9224;
@@ -666,12 +694,12 @@ p.ime-paket{
     display:block;
 }
 .forlok{
-    background-color: #1D1E20;
-    background-image: url("../images/proba17.jpg");
-    background-position:  center top;
+    background-image: url("../images/formabg.jpg");
+   
+    background-position:80% 70%;
 height:600px;
 background-size: cover;
-background-attachment: fixed;
+
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -682,7 +710,7 @@ justify-content: center;
 .form{
     width:25%;
     color: #e3e3e3;
-    margin:20px auto;
+    margin:20px 40px;
 
     
 }
@@ -795,7 +823,7 @@ font-size: 50px;
 
 footer{
     width:100%;
-    padding:20px 0px;
+    padding-top:20px;
     background-color: #1D1E20;
 
 
@@ -811,6 +839,7 @@ footer{
     padding:0px 30px;
     
 }
+
 footer ul{
     list-style-type:none;
 }
@@ -825,7 +854,7 @@ footer ul li{
 footer ul li a{
     color:#e3e3e3;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     font-weight:lighter;
 }
@@ -846,7 +875,9 @@ p#logo{
     align-items: center;
 
 }
-
+.social{
+    text-align: right;
+}
 
 #mot{
     display:block;
@@ -854,11 +885,18 @@ p#logo{
     margin-top: 10px;
     color:#e3e3e3;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .fa-sitemap{
     background-color: #e3e3e3;
     color:#1D1E20;
-    border-radius: 3px;
-    font-size: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+#copyrig{
+    margin-top:50px;
+    color:#e3e3e3;
+    font-size:10px;
 }
