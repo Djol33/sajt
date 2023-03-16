@@ -138,8 +138,12 @@ ul li:hover a::after {
     }
     50% {
         transform:translate(-50%, -50%);
+        border-bottom: 0px;
         padding-bottom: 10px;
 
+    }
+    75%{
+        border-bottom: 1px solid #e3e3e3;
     }
     100%{
         border-bottom: 3px solid #e3e3e3;
@@ -720,7 +724,7 @@ form label, form input{
     width:100%;
     text-align :center;
 
-    border-radius:20px ;
+    border-radius:5px ;
     border:none;
     margin-top:3px;
 
@@ -756,6 +760,8 @@ form{
     border-radius: 20px;
     border:1px solid #c1c1c1;
     padding:20px;
+    background-color:rgba(0, 0, 0, 0.679);
+
 }
 input[type=submit]{
     background-color: #ff8100;
@@ -848,7 +854,7 @@ footer ul li i{
     color:#e3e3e3
 }
 footer ul li{
-    margin:3px;
+    margin:5px;
 }
 
 footer ul li a{
@@ -899,4 +905,58 @@ p#logo{
     margin-top:50px;
     color:#e3e3e3;
     font-size:10px;
+}
+
+
+/* AUTOR */
+.autor{
+    width:100%;
+    background-color:#e3e3e3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.autor img{
+    width:374px;
+    border-radius: 20px;
+   box-shadow:  0px 0px 4px 0px gray;
+   
+    
+}
+
+.autorslika{
+    width:30%;
+    text-align: center;
+}
+
+.o-author h2{
+    font-size: 40px;
+    color:#1D1E20;
+}
+
+.o-author p{
+    font-size: 25px;
+    color:#1D1E20;  
+    border-bottom: 2px solid #1D1E20;
+    margin-bottom:20px;
+    padding:10px;
+    text-align: center;
+}
+#mainimg-autor{
+    height:400px;
+}
+.slika img{
+    height:400px !important;
+}
+.o-author{
+    width:30%;
+}
+
+.desno h2{
+    text-align: right;
 }

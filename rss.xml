@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-
+<channel>
+    <title>NO LIMIT - Novosti</title>
+    <link>https://djol33.netlify.app/index.html</link>
+    <description>Budite prvi obavesteni</description>
+    <item>
+        <title>Nove slike iz nase teretane</title>
+        <link>https://djol33.netlify.app/galerija.html</link>
+        <description>Pogledajte nase nove slike iz teretane</description>
+    </item>
+    <item>
+        <title>HIT PONUDA</title>
+        <link>https://djol33.netlify.app/cenovnik.html</link>
+        <description>Najjeftinija ponuda clanarina u Beogradu!!</description>
+    </item>
+</channel>
+</rss>
